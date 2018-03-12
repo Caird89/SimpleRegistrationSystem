@@ -15,13 +15,15 @@ import java.time.Period;
  */
 public abstract class Person {
 
-    String firstName;
+    String firstName;     
     String lastName;
     private String streetAddress, city, postalCode;
     private LocalDate birthday;
 
     /**
-     *
+     * This is a constructor that accepts all of the instance variables for a person.
+     * The constructor accepts arguments in the following order: first name, last name, street address, city, postal code, 
+     * and the persons birth date (using LocalDate). 
      * @param firstName
      * @param lastName
      * @param streetAddress
@@ -151,7 +153,7 @@ public abstract class Person {
     }
 
     /**
-     * This is a get method that returns the persons birth year as an int
+     * This is a get method that returns the persons birth year as an integer
      *
      * @return
      */
@@ -225,5 +227,10 @@ public abstract class Person {
         } else {
             this.birthday = birthday;
         }
+    }
+    
+    @Override
+    public String toString(){
+        return firstName + " " + lastName;
     }
 }

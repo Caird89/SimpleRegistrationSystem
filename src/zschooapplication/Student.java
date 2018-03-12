@@ -8,7 +8,7 @@ package zschooapplication;
 import java.time.LocalDate;
 
 /**
- *
+ * This is a student class extending from the abstract class Person.
  * @author CAIRD
  */
 public class Student extends Person {
@@ -18,8 +18,10 @@ public class Student extends Person {
     private boolean currentStanding;
 
     /**
-     *
-     * This is a constructor for the Student Object
+     *This is a constructor that accepts all of the instance variables for a Student.
+     * The constructor accepts arguments in the following order: first name, last name, street address, city, postal code, 
+     * the student's birth date (using LocalDate), the date they enrolled at the school and the student number.
+     * 
      *
      * @param firstName
      * @param lastName
@@ -48,7 +50,7 @@ public class Student extends Person {
     }
 
     /**
-     * This is a get method that returns the year enrolled as an int
+     * This is a get method that returns the year enrolled as an integer
      *
      * @return
      */
