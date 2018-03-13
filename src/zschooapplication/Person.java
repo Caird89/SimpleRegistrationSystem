@@ -15,15 +15,17 @@ import java.time.Period;
  */
 public abstract class Person {
 
-    String firstName;     
+    String firstName;
     String lastName;
     private String streetAddress, city, postalCode;
     private LocalDate birthday;
 
     /**
-     * This is a constructor that accepts all of the instance variables for a person.
-     * The constructor accepts arguments in the following order: first name, last name, street address, city, postal code, 
-     * and the persons birth date (using LocalDate). 
+     * This is a constructor that accepts all of the instance variables for a
+     * person. The constructor accepts arguments in the following order: first
+     * name, last name, street address, city, postal code, and the persons birth
+     * date (using LocalDate).
+     *
      * @param firstName
      * @param lastName
      * @param streetAddress
@@ -228,9 +230,15 @@ public abstract class Person {
             this.birthday = birthday;
         }
     }
-    
+
+    /**
+     * This is a toString method that over rides the default toString method.
+     * This method returns the first name and last name.
+     *
+     * @return
+     */
     @Override
-    public String toString(){
+    public String toString() {
         return firstName + " " + lastName;
     }
 }
